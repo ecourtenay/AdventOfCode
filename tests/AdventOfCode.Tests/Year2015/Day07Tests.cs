@@ -1,6 +1,6 @@
 ﻿using AdventOfCode.Year2015;
 
-namespace AdventOfCode.Tests.Year2015;
+namespace AdventOfCode2015CS.Tests;
 
 public class Day07Tests
 {
@@ -15,7 +15,7 @@ public class Day07Tests
     NOT y -> i
     x -> aa
     """;
-    
+
     private static readonly Dictionary<string, string> ParsedDictionary = new()
     {
         { "x", "123" },
