@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode.Year2022;
 
-[Description("Puzzle Title")]
+[Description("Pyroclastic Flow")]
 public class Day17 : IPuzzle
 {
     public object Part1(string input) => string.Empty;
