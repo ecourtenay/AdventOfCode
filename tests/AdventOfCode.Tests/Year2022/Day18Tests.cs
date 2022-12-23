@@ -6,6 +6,11 @@ public class Day18Tests : IClassFixture<Day18>
 {
     private readonly Day18 _sut;
 
+    private const string TwoCubes = """
+    1,1,1
+    2,1,1
+    """;
+
     private const string TestData = """
     2,2,2
     1,2,2
@@ -31,6 +36,12 @@ public class Day18Tests : IClassFixture<Day18>
     public void Part1Example()
     {
         _sut.Part1(TestData).As<int>().Should().Be(64);
+    }
+
+    [Fact(DisplayName = "Part1 should return expected results with two cubes")]
+    public void SmallPart1Example()
+    {
+        _sut.Part1(TwoCubes).As<int>().Should().Be(10);
     }
 
     [Fact(DisplayName = "Part2 should return expected results from example data")]
